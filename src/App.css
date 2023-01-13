@@ -36,3 +36,94 @@
     transform: rotate(360deg);
   }
 }
+
+
+.heading{
+  font-size: 34px;
+  font-weight:600;
+  text-shadow: 3px 3px 20px aqua;
+}
+
+.twoColumns {
+width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  /* align-items: center; */
+  /* justify-content: space-evenly; */
+  /* margin: 2rem; */
+  /* gap: 15rem; */
+}
+.column1{
+  margin-top: 3rem;
+  width: 40rem;
+  /* align-items: center; */
+  
+
+}
+.secondBox1{
+  width: 70%;
+  height: 70%;
+  margin: 0;
+
+  /* border: 10px double #888888; */
+  border: 10px solid linear-gradient(to right, #ff0000, #0000ff);
+  border-radius: 2rem;
+  
+  margin: 4rem auto auto auto;
+  line-height: 3rem;
+}
+.secondBox1 {
+  position: relative;
+}
+
+.secondBox1::before {
+  border-radius: .2rem;
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  background: linear-gradient(to right,grey, #e91d1db0, #00b7ff);
+  z-index: -1;
+}
+.secondBox2{
+  width: 70%;
+  height: 70%;
+  margin: 0;
+  /* border: 1rem red solid; */
+  border-radius: 4rem;
+  margin: 4rem auto auto auto;
+  line-height: 3rem;
+  /* border: 10px double #888888; */
+}
+.secondBox2 {
+  position: relative;
+}
+
+.secondBox2::before {
+  border-radius: .2rem;
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  background: linear-gradient(to left,grey, #e91d1db0, #00b7ff);
+  z-index: -1;
+}
+
+.app, button{
+font-size: 1.2rem;
+border: none; /* Remove border */
+cursor: pointer; /* Add cursor on hover */
+border-radius: 4px; /* Rounded edges */
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Add a shadow effect */
+transition: all 0.3s ease; 
+}
+.app,button:hover{
+  
+    background-color: #63bb6683;
+  }
+
+
